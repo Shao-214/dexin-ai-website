@@ -107,6 +107,19 @@
       .contact-box { padding: 25px; }
       section { padding: 70px 0; }
     }
+    .platform-panel { margin-top: 32px; padding: 36px; border: 1px solid #d5b47755; border-radius: 12px; background: linear-gradient(120deg, #1b1d24, #11141d); }
+    .platform-panel h3 { margin: 12px 0 16px; font-size: clamp(23px, 3vw, 30px); }
+    .platform-panel p { color: var(--muted); margin: 0 0 14px; }
+    .platform-panel p:last-child { margin-bottom: 0; }
+    .service-list { display: grid; gap: 20px; margin-top: 36px; }
+    .service-row { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 24px; padding: 32px; border: 1px solid #ffffff16; border-radius: 12px; background: var(--panel); }
+    .service-number { color: var(--gold); font-size: 32px; font-weight: 700; line-height: 1.3; }
+    .service-row h3 { margin: 0 0 12px; font-size: 23px; }
+    .service-row p { margin: 0; color: var(--muted); }
+    @media (max-width: 760px) {
+      .platform-panel { padding: 25px; }
+      .service-row { grid-template-columns: 1fr; gap: 12px; padding: 25px; }
+    }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .btn { transition: none; }
@@ -122,6 +135,7 @@
         <a href="#home">首頁</a>
         <a href="#about">關於我們</a>
         <a href="#services">服務項目</a>
+        <a href="#ai-solutions">AI 方案</a>
         <a href="#contact">聯絡我們</a>
       </div>
     </nav>
@@ -182,6 +196,69 @@
       </div>
     </section>
 
+    <section id="ai-solutions">
+      <div class="wrap">
+        <div class="eyebrow">AI SOLUTIONS</div>
+        <h2 class="section-title">從硬體到應用，打造完整 AI 能力</h2>
+        <div class="grid">
+          <article class="tile">
+            <div class="num">01 / INTEGRATION</div>
+            <h3>高度整合的 AI</h3>
+            <p>從基礎硬體設備建置到 AI 推論服務安裝，具備完整的技術能力，滿足各階層用戶需求。</p>
+          </article>
+          <article class="tile">
+            <div class="num">02 / AUTONOMY</div>
+            <h3>自主可靠的 AI</h3>
+            <p>提供多種開源大模型的企業級生成式 AI 服務和平台，在開發工具、大模型、微調、部署與推論上，兼具主控權與選擇權。</p>
+          </article>
+          <article class="tile">
+            <div class="num">03 / SECURITY</div>
+            <h3>安全合規的 AI</h3>
+            <p>符合國際與政府安全規範和認證，確保數據主權與隱私安全，滿足不同產業的合規性與法規遵循。</p>
+          </article>
+        </div>
+        <div class="platform-panel">
+          <div class="eyebrow">COMPUTING PLATFORM</div>
+          <h3>整合算力資源，連結多元應用</h3>
+          <p>以平台化與系統化方式，提供運算資源管理、配置與調度能力，使分散於不同場域、不同機構或不同合作單位的算力資源得以被有效整合與利用。</p>
+          <p>支援快速啟用與在地部署，提供高效算力與雲平台服務，滿足 AI 訓練與部署、商務應用開發落地、資料儲存備份及算力交易等多元需求。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="alternate" id="infrastructure">
+      <div class="wrap">
+        <div class="eyebrow">INFRASTRUCTURE &amp; SUPPORT</div>
+        <h2 class="section-title">算力建置與技術服務</h2>
+        <p class="intro">從設備選型、基礎設施建置到持續支援，協助企業建立穩定且具擴展能力的算力環境。</p>
+        <div class="service-list">
+          <article class="service-row">
+            <div class="service-number" aria-hidden="true">01</div>
+            <div>
+              <h3>高端算力硬體選型與供應</h3>
+              <p>針對各類大型運算場景，依客戶的運算負荷、擴展規劃與預算條件，提供高端算力硬體專業選型評估，協調貨源、完成商務報價，同時配套相關零組件整合，協助客戶取得符合規格的算力硬體設備。</p>
+            </div>
+          </article>
+          <article class="service-row">
+            <div class="service-number" aria-hidden="true">02</div>
+            <div>
+              <h3>算力基礎設施規劃與建置</h3>
+              <p>依據客戶機房空間與業務目標，進行機架佈局規劃、多節點硬體整合與互聯調校，建置穩定、可橫向擴展的企業級算力基礎環境，滿足長期高密度運算的部署需求。</p>
+            </div>
+          </article>
+          <article class="service-row">
+            <div class="service-number" aria-hidden="true">03</div>
+            <div>
+              <h3>算力系統技術諮詢與持續支援</h3>
+              <p>提供設備上線前硬體驗證、系統效能調校、故障診斷排除以及後續硬體升級規劃建議，建立專屬技術對接通道，為算力系統提供長期穩定的技術支援服務。</p>
+            </div>
+          </article>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="#contact">洽詢算力與建置需求</a>
+        </div>
+      </div>
+    </section>
     <section id="contact">
       <div class="wrap">
         <div class="eyebrow">CONTACT US</div>
@@ -275,3 +352,4 @@
   </script>
 </body>
 </html>
+
